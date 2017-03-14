@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dialog_country_picker_text_view_information_margin_top"
         android:gravity="center"
-        android:text="@string/app_name"
+        android:text="Tell us which country you live in"
         android:textColor="#a299a6"
         android:textSize="@dimen/dialog_country_picker_text_view_information_text_size" />
 
