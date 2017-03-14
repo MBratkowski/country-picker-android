@@ -8,17 +8,17 @@
     <TextView
         android:id="@+id/row_title"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/item_country_picker_text_height"
         android:layout_weight="1"
         android:gravity="center_vertical"
-        android:padding="10dp"
-        tools:text="Tekst" />
+        android:padding="@dimen/item_country_picker_text_padding"
+        tools:text="text" />
 
     <ImageView
         android:id="@+id/row_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-        android:padding="10dp" />
+        android:layout_width="@dimen/item_country_picker_icon_size"
+        android:layout_height="@dimen/item_country_picker_icon_size"
+        android:layout_marginLeft="@dimen/item_country_picker_icon_margin_left"
+        android:padding="@dimen/item_country_picker_icon_padding" />
 
 </LinearLayout>
