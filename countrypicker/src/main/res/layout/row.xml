@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    >
+    android:orientation="horizontal">
 
-  <ImageView
-      android:id="@+id/row_icon"
-      android:layout_width="50dp"
-      android:layout_height="50dp"
-      android:layout_marginLeft="10dp"
-      android:padding="10dp"
-      />
+    <TextView
+        android:id="@+id/row_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_country_picker_text_height"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/item_country_picker_text_padding"
+        tools:text="text" />
 
-  <TextView
-      android:id="@+id/row_title"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:gravity="center_vertical"
-      android:padding="10dp"
-      />
+    <ImageView
+        android:id="@+id/row_icon"
+        android:layout_width="@dimen/item_country_picker_icon_size"
+        android:layout_height="@dimen/item_country_picker_icon_size"
+        android:layout_marginLeft="@dimen/item_country_picker_icon_margin_left"
+        android:padding="@dimen/item_country_picker_icon_padding" />
 
 </LinearLayout>
