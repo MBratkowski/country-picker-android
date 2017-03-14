@@ -132,7 +132,7 @@ public class CountryPicker extends DialogFragment implements Comparator<Country>
         }
         getAllCountries();
         searchEditText = (EditText) view.findViewById(R.id.country_code_picker_search);
-        countryListView = (ListView) view.findViewById(R.id.country_code_picker_listview);
+        countryListView = (ListView) view.findViewById(R.id.country_code_picker_list_view);
 
         adapter = new CountryListAdapter(getActivity(), selectedCountriesList);
         countryListView.setAdapter(adapter);

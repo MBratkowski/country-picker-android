@@ -8,8 +8,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.mukesh.countrypicker.R;
 import com.mukesh.countrypicker.models.Country;
+
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Locale;
@@ -80,7 +82,7 @@ public class CountryListAdapter extends BaseAdapter {
   }
 
   static class Cell {
-    public TextView textView;
+    TextView textView;
     public ImageView imageView;
   }
 }
