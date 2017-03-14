@@ -3,28 +3,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    >
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
-  <EditText
-      android:id="@+id/country_code_picker_search"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_margin="10dp"
-      android:drawableLeft="@drawable/ic_search"
-      android:hint="@string/search"
-      android:maxLines="1"
-      android:imeOptions="actionSearch"
-      />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Tell us which country you live in"
+        android:textSize="15sp" />
 
-  <ListView
-      android:id="@+id/country_code_picker_listview"
-      android:layout_width="match_parent"
-      android:layout_height="0dp"
-      android:layout_marginBottom="10dp"
-      android:layout_marginLeft="10dp"
-      android:layout_marginRight="10dp"
-      android:layout_weight="1"
-      >
-  </ListView>
+    <EditText
+        android:id="@+id/country_code_picker_search"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="@string/search"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <ListView
+        android:id="@+id/country_code_picker_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:divider="#eae7eb"
+        android:dividerHeight="1dp" />
 
 </LinearLayout>
